@@ -28,4 +28,4 @@ var Top = () => {
 //   );
 // }
 
-export default Top2;
+export default Top;
