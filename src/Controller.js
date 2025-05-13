@@ -4,9 +4,10 @@ import { Route, Routers, Routes } from 'react-router-dom';
 // import 가상의 태그명 from './Top'; => export default 만 사용할 수 있음
 // {} 없으면 export default 필수
 import Top from './Top'; // Top.js에 있는 Top 함수를 가져옴
-import { Copy } from './Copy'; // Copy.js에 있는 Copy 함수를 가져옴
-import { Main } from './Main'; // Main.js에 있는 Main 함수를 가져옴
-import { Subpage } from './Subpage'; // Main.js에 있는 Main 함수를 가져옴
+import { Copy } from './Copy';
+import { Main } from './Main';
+import { Subpage } from './Subpage';
+import { Login } from './Login.js';
 
 // 페이지를 분할하는 영역 및 페이지 이동 (메인 페이지)
 // Routes : 페이지를 분할하는 영역
@@ -18,6 +19,7 @@ function Controller() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/subpage" element={<Subpage />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
       <Copy />
     </>
