@@ -7,9 +7,9 @@ var Top = () => {
     <>
       <ul>
         <li><Link to="/"> 메뉴 1</Link></li>
-        <li><Link to="/Subpage"> 메뉴 1</Link></li>
+        <li><Link to="/Subpage"> 메뉴 2</Link></li>
         <a href='/Login'><li>메뉴 3</li></a>
-        <li>메뉴 4</li>
+        <li><Link to="/Oop"> 메뉴 4</Link></li>
       </ul>
     </>
   );
