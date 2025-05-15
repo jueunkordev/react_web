@@ -9,6 +9,7 @@ import { Main } from './Main';
 import { Subpage } from './Subpage';
 import { Login } from './Login.js';
 import { Oop } from './Oop';
+import { Arr } from './Arr';
 // 페이지를 분할하는 영역 및 페이지 이동 (메인 페이지)
 // Routes : 페이지를 분할하는 영역
 // Route : URI의 경로에 따라 해당 (path) .js를 로드하는 태그
@@ -21,6 +22,7 @@ function Controller() {
         <Route path="/subpage" element={<Subpage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/oop" element={<Oop />} />
+        <Route path="/arr" element={<Arr />} />
       </Routes>
       <Copy />
     </>

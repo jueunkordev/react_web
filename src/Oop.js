@@ -42,10 +42,41 @@ export const Oop = function () {
     return htmlcode2;
   }
 
+  // switch문
+  var [result3, resultdata3] = useState("card");
+  var for_switch = function () {
+    var htmlcode3 = []; // 빈 배열 값을 선언
+    // 해당 배열값에 html코드를 조건만 결과를 입력 후 최종 배열변수를 return
+    switch (result3) {
+      case "card":
+        htmlcode3.push(
+          <div>
+            카드 번호 : <input type='text' /><br />
+            카드 비밀번호 : <input type='password' /><br />
+          </div>
+        );
+        break;
+      case "bank":
+        htmlcode3.push(
+          <div>
+            입금계좌번호 : <input type='text' /><br />
+            입금자명 : <input type='text' /><br />
+          </div>
+        );
+        break;
+      default:
+        htmlcode3.push(<input type='button' value='기타결제수단' />);
+        break;
+    }
+    return htmlcode3;
+  }
+
+
   return (
     <>
       {if_data()}<br />
       {for_data()}<br />
+      {for_switch()}<br />
       <ol>
 
       </ol>
