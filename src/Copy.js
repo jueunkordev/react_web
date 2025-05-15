@@ -8,7 +8,7 @@ export let Copy = () => {
     width: '100%',
     height: '25px',
     color: 'blue',
-    backgroundColor: 'yellow'
+    backgroundColor: '#EFEFEF'
   };
 
   return (
